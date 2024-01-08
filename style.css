@@ -18,8 +18,11 @@ h3 {
 
 /* Header */
 header {
-  text-align: center;
+  display:flex;
+  justify-content: space-between;
+ align-items: center;
 }
+
 
 /* Containers */
 div {
@@ -52,8 +55,9 @@ a:hover {
 }
 
 nav a {
-  padding-left: 20px;
+margin-right:20px;
 }
+
 
 /* Images */
 img {
@@ -75,4 +79,49 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+.about-section {
+  text-align: center; /* Center the content within the section */
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between image and text */
+}
+
+.profile img {
+  width: 150px; /* Adjust image width */
+  height: auto;
+  border-radius: 50%; /* Display the image in a circular shape */
+}
+
+.intro-text {
+  text-align: left;
+  max-width: 400px; /* Adjust the maximum width of the text container */
+}
+
+#portfolio {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px; /* Adjust the spacing between projects */
+}
+
+.project {
+  flex: 0 0 auto;
+  width: calc(33.33% - 20px); /* Adjust project width with gap */
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project p {
+  font-size: 14px; /* Set the font size for project descriptions */
 }
