@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #eae2b7;
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,13 +19,21 @@ h3 {
 
 /* Header */
 header {
-  display:flex;
-  justify-content: space-between;
- align-items: center;
+display:flex;
+justify-content: space-around;
+align-items: center;
+width: 600px;
+text-align: center;
+margin:auto;
 }
 
 
 /* Containers */
+main {
+  width: 600px;
+  margin:auto;
+}
+
 div {
   background-color: #eae2b7;
   margin: auto;
@@ -46,6 +52,8 @@ article div {
 /* Paragraphs */
 p {
   line-height: 1.5;
+  margin: auto;
+  padding: 5px;
 }
 
 /* Links */
@@ -82,10 +90,13 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+  width: 600px;
 }
 
 .about-section {
   text-align: center; /* Center the content within the section */
+  width: 600px;
+  margin: auto;
 }
 
 .profile {
@@ -107,25 +118,33 @@ hr {
   max-width: 400px; /* Adjust the maximum width of the text container */
 }
 
-#portfolio {
+.portfolio-projects {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap:nowrap;
   justify-content: space-between;
-  gap: 20px; /* Adjust the spacing between projects */
+  width: 600px;
+  margin: auto;
 }
 
 .project {
-  flex: 0 0 auto;
-  width: calc(33.33% - 20px); /* Adjust project width with gap */
+  flex: 0 0 calc(33.333% - 20px);
   text-align: center;
-}
-
-.project img {
-  max-width: 100%;
-  height: auto;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
 .project p {
   font-size: 14px; /* Set the font size for project descriptions */
 }
 
+.portfolio-summary{
+  padding-top: 20px;
+}
+
+
+/* old code below*/
+
+/* .project img {
+  max-width: 100%;
+  height: auto;
+} */
