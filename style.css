@@ -6,7 +6,6 @@ body {
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
-  align-items: center;
 }
 
 /* Headings */
@@ -25,13 +24,6 @@ align-items: center;
 width: 600px;
 text-align: center;
 margin:auto;
-}
-
-
-/* Containers */
-main {
-  width: 600px;
-  margin:auto;
 }
 
 div {
@@ -69,7 +61,6 @@ nav a {
 margin-right:20px;
 }
 
-
 /* Images */
 img {
   width: 100%;
@@ -91,12 +82,6 @@ footer {
 hr {
   border: 1px solid black;
   width: 600px;
-}
-
-.about-section {
-  text-align: center; /* Center the content within the section */
-  width: 600px;
-  margin: auto;
 }
 
 .profile {
@@ -142,9 +127,23 @@ hr {
 }
 
 
-/* old code below*/
+/* old code below beginning
 
-/* .project img {
+.project img {
   max-width: 100%;
   height: auto;
-} */
+}
+
+Containers 
+main {
+  width: 600px;
+  margin:auto;
+}
+
+.about-section {
+  text-align: center; 
+  width: 600px;
+  margin: auto;
+}
+
+old code ending */ 
